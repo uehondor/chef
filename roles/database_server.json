@@ -1,0 +1,12 @@
+{
+    "name": "database_server",
+    "description": "database server",
+    "chef_type": "role",
+    "default_attributes": {},
+    "override_attributes": {},
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[build-essential]",
+        "recipe[mysql::server]"
+    ]
+}
