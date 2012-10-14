@@ -946,7 +946,7 @@ default_socket_timeout = 60
 [Date]
 ; Defines the default timezone used by the date functions
 ; http://php.net/date.timezone
-date.timezone = Europe/London
+;date.timezone =
 
 ; http://php.net/date.default-latitude
 ;date.default_latitude = 31.7667
@@ -1851,3 +1851,7 @@ ldap.max_links = -1
 ; Local Variables:
 ; tab-width: 4
 ; End:
+
+<% node['php']['directives'].each do |directive, value| -%>
+<%= "#{directive}=\"#{value}\"" %>
+<% end -%>
