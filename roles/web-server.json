@@ -17,9 +17,9 @@
         "recipe[apt]",
         "recipe[apache2]",
         "recipe[php]",
-        "recipe[custom::php5_mysql]
-        "recipe[custom::php5_apc],
-        "recipe[apache2::mod_php5]
+        "recipe[custom::php5_mysql]",
+        "recipe[custom::php5_apc]",
+        "recipe[apache2::mod_php5]"
     ],
     "env_run_lists" : { },
     "override_attributes": { }
