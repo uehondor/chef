@@ -2,12 +2,12 @@
     "name": "web-server",
     "chef_type": "role",
     "json_class": "Chef::Role",
-    "default_attributes": { 
+    "default_attributes": {
         "apache2": {
             "listen_ports": ["80", "443"],
             "default_modules": [
-                "status", "alias", "authz_host", "autoindex", "dir", "env", 
-                "mime", "negotiation", "setenvif", 
+                "status", "alias", "authz_host", "autoindex", "dir", "env",
+                "mime", "negotiation", "setenvif",
                 "ssl", "rewrite"
             ]
         }
@@ -19,6 +19,8 @@
         "recipe[php]",
         "recipe[custom::php5_mysql]",
         "recipe[custom::php5_apc]",
+        "recipe[custom::php5_intl]",
+        "recipe[custom::php5_ini_for_web]",
         "recipe[apache2::mod_php5]"
     ],
     "env_run_lists" : { },
