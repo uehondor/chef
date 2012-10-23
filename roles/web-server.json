@@ -17,11 +17,11 @@
         "recipe[apt]",
         "recipe[apache2]",
         "recipe[php]",
+        "recipe[apache2::mod_php5]",
         "recipe[custom::php5_mysql]",
         "recipe[custom::php5_apc]",
         "recipe[custom::php5_intl]",
-        "recipe[custom::php5_ini_for_web]",
-        "recipe[apache2::mod_php5]"
+        "recipe[custom::php5_ini_for_web]"
     ],
     "env_run_lists" : { },
     "override_attributes": { }
